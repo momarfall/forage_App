@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/', function () {
-    return view('layout.register');
+    return view('layout.default');
 });
 
 
