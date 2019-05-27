@@ -31,8 +31,8 @@
           <img src="asset/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Moustapha DIABANG</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          <p>MOMAR FALL</p>
+          <!--a href="#"><i class="fa fa-circle text-success"></i> Online</a>-->
         </div>
       </div>
       <!-- search form -->
@@ -48,8 +48,8 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">MAIN NAVIGATION</li>
-        <li><a href="login"><i class="fa fa-circle-o text-red"></i> <span>Gestion des Utilisateurs</span></a></li>
+        <li class="header"></li>
+        <li><a href="login.blade.php"><i class="fa fa-circle-o text-red"></i> <span>Gestion des Utilisateurs</span></a></li>
         <li><a href="register"><i class="fa fa-circle-o text-red"></i> <span>Gestion des Compteurs</span></a></li>
         <li><a href="register"><i class="fa fa-circle-o text-red"></i> <span>Gestion de la Facturation</span></a></li>
         <li><a href="register"><i class="fa fa-circle-o text-red"></i> <span>Gestion des Clients</span></a></li>
