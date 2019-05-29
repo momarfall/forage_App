@@ -10,30 +10,30 @@ namespace App;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 /**
- * Class Role
+ * Class Region
  * 
  * @property int $id
  * @property string $uuid
- * @property string $name
+ * @property string $nom
  * @property string $deleted_at
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
  * 
- * @property \Illuminate\Database\Eloquent\Collection $users
+ * @property \Illuminate\Database\Eloquent\Collection $departements
  *
  * @package App
  */
-class Role extends Eloquent
+class Region extends Eloquent
 {
 	use \Illuminate\Database\Eloquent\SoftDeletes;
 
 	protected $fillable = [
 		'uuid',
-		'name'
+		'nom'
 	];
 
-	public function users()
+	public function departements()
 	{
-		return $this->hasMany(\App\User::class, 'roles_id');
+		return $this->hasMany(\App\Departement::class, 'regions_id');
 	}
 }
