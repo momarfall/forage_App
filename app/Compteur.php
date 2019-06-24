@@ -2,7 +2,7 @@
 
 /**
  * Created by Reliese Model.
- * Date: Wed, 29 May 2019 17:02:28 +0000.
+ * Date: Wed, 19 Jun 2019 00:23:39 +0000.
  */
 
 namespace App;
@@ -29,7 +29,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
 class Compteur extends Eloquent
 {
 	use \Illuminate\Database\Eloquent\SoftDeletes;
-
+	use \App\Helpers\UuidForKey;
 	protected $casts = [
 		'administrateurs_id' => 'int'
 	];
@@ -45,7 +45,7 @@ class Compteur extends Eloquent
 		return $this->belongsTo(\App\Administrateur::class, 'administrateurs_id');
 	}
 
-	public function abonnements()
+	public function abonnement()
 	{
 		return $this->hasMany(\App\Abonnement::class, 'compteurs_id');
 	}

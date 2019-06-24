@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Village;
 use Illuminate\Http\Request;
-
+use App\Helpers\PCollection;
+use Yajra\Datatables\Datatables;
 class VillageController extends Controller
 {
     /**
@@ -14,9 +15,17 @@ class VillageController extends Controller
      */
     public function index()
     {
-        //
+        
+        $villages=Village::all()->load(['chef.user','commune.arrondissement.departement.region'])->paginate(10);
+        return view('villages.index',compact('villages'));
     }
 
+    
+    public function list(Request $request)
+    {
+        $villages=Village::with('chef.user','commune.arrondissement.departement.region')->get();
+        return Datatables::of($villages)->make(true);
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -24,7 +33,7 @@ class VillageController extends Controller
      */
     public function create()
     {
-        //
+        return view('villages.create');
     }
 
     /**

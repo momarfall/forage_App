@@ -2,7 +2,7 @@
 
 /**
  * Created by Reliese Model.
- * Date: Wed, 29 May 2019 17:02:28 +0000.
+ * Date: Wed, 19 Jun 2019 00:23:39 +0000.
  */
 
 namespace App;
@@ -29,7 +29,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
 class Village extends Eloquent
 {
 	use \Illuminate\Database\Eloquent\SoftDeletes;
-
+	use \App\Helpers\UuidForKey;
 	protected $casts = [
 		'chef_id' => 'int',
 		'communes_id' => 'int'
@@ -50,5 +50,9 @@ class Village extends Eloquent
 	public function clients()
 	{
 		return $this->hasMany(\App\Client::class);
+	}
+	public function chef()
+	{
+		return $this->belongsTo(\App\Client::class, 'chef_id');
 	}
 }

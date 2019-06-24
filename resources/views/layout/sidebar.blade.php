@@ -28,7 +28,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="asset/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="asset/dist/img/bob.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>MOMAR FALL</p>
@@ -49,10 +49,18 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header"></li>
-        <li><a href="login.blade.php"><i class="fa fa-circle-o text-red"></i> <span>Gestion des Utilisateurs</span></a></li>
-        <li><a href="register"><i class="fa fa-circle-o text-red"></i> <span>Gestion des Compteurs</span></a></li>
-        <li><a href="register"><i class="fa fa-circle-o text-red"></i> <span>Gestion de la Facturation</span></a></li>
-        <li><a href="register"><i class="fa fa-circle-o text-red"></i> <span>Gestion des Clients</span></a></li>
+        <li><a href="/laravelApp/public"><i class="fa fa-home" aria-hidden="true"></i></i> <span>ACCEUIL</span></a></li>
+        <li><a href="./clients"><i class="fa fa-user" aria-hidden="true"></i></i> <span>Clients</span></a></li>
+        <li><a href="./villages"><i class="fa fa-circle-o text-red"></i> <span>Villages</span></a></li>
+        <li><a href="./consommations"><i class="fa fa-circle-o text-red"></i> <span>Abonnements</span></a></li>
+        <li><a href="./compteurs"><i class="fa fa-circle-o text-red"></i> <span>Compteurs</span></a></li>
+        <li><a href="./users"><i class="fa fa-user" aria-hidden="true"></i> <span>Utilisateurs</span></a></li>
+        <li><a href="./administrateurs"><i class="fa fa-user" aria-hidden="true"></i> <span>Administrateurs</span></a></li>
+        <li><a href="./comptables"><i class="fa fa-user" aria-hidden="true"></i> <span>Comptables</span></a></li>
+        <li><a href="./reglements"><i class="fa fa-circle-o text-red"></i> <span>Reglements</span></a></li>
+        <li><a href="factures"><i class="fa fa-circle-o text-red"></i> <span>Factures</span></a></li>
+        <li><a href="./consommations"><i class="fa fa-circle-o text-red"></i> <span>Consommations</span></a></li>
+ 
         <!-- <li class="active treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>

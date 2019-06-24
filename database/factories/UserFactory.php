@@ -15,7 +15,7 @@ use Faker\Generator as Faker;
 | model instances for testing / seeding your application's database.
 |
 */
-
+/* 
 $factory->define(User::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
@@ -25,3 +25,4 @@ $factory->define(User::class, function (Faker $faker) {
         'remember_token' => Str::random(10),
     ];
 });
+ */
