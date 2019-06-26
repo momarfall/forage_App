@@ -25,7 +25,7 @@ class CreateReglementsTable extends Migration
             $table->increments('id');
             $table->char('uuid', 36);
             $table->dateTime('date')->nullable()->default(DB::raw('CURRENT_TIMESTAMP'));
-            $table->decimal('montant')->nullable();
+            $table->double('montant')->nullable();
             $table->unsignedInteger('types_id');
             $table->unsignedInteger('factures_id');
             $table->unsignedInteger('comptables_id');

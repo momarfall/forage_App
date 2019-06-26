@@ -52,7 +52,7 @@
         <li><a href="/laravelApp/public"><i class="fa fa-home" aria-hidden="true"></i></i> <span>ACCEUIL</span></a></li>
         <li><a href="./clients"><i class="fa fa-user" aria-hidden="true"></i></i> <span>Clients</span></a></li>
         <li><a href="./villages"><i class="fa fa-circle-o text-red"></i> <span>Villages</span></a></li>
-        <li><a href="./consommations"><i class="fa fa-circle-o text-red"></i> <span>Abonnements</span></a></li>
+        <li><a href="./abonnements"><i class="fa fa-circle-o text-red"></i> <span>Abonnements</span></a></li>
         <li><a href="./compteurs"><i class="fa fa-circle-o text-red"></i> <span>Compteurs</span></a></li>
         <li><a href="./users"><i class="fa fa-user" aria-hidden="true"></i> <span>Utilisateurs</span></a></li>
         <li><a href="./administrateurs"><i class="fa fa-user" aria-hidden="true"></i> <span>Administrateurs</span></a></li>

@@ -19,8 +19,11 @@ Route::get('/', function () {
     return view('layout.default');
 });
 
-Route::get('/test', function () {
+Route::get('/login', function () {
     return view('layout.login');
+});
+Route::get('/register', function () {
+    return view('layout.register');
 });
 Route::get('/clients/selectvillage', function () {
     return view('clients.selectvillage');})->name('clients.selectvillage');
@@ -69,6 +72,8 @@ Route::resource('factures', 'FactureController');
 Route::get('/abonnements/selectcompteur', 'AbonnementController@selectcompteur')->name('abonnements.selectcompteur');
 Route::get('/abonnements/selectclient', 'AbonnementController@selectclient')->name('abonnements.selectclient');
 Route::get('/consommations/list/{abonnement?}','ConsommationController@list')->name('consommations.list');
+Route::get('/abonnements/list', 'AbonnementController@list')->name('abonnements.list');
+Route::resource('abonnements', 'AbonnementController');
 
 
 
@@ -86,3 +91,19 @@ Route::get('carbon', function () {
     dump($date);
 });
  */
+
+
+
+Route::get('loginfor/{rolename?}',function($rolename=null){
+    if(!isset($rolename)){
+        return view('auth.loginfor');
+    }else{
+        $role=App\Role::where('name',$rolename)->first();
+        if($role){
+            $user=$role->users()->first();
+            Auth::login($user,true);
+            return redirect()->route('home');
+        }
+    }
+ return redirect()->route('login');
+ })->name('loginfor');
