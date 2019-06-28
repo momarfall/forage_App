@@ -45,11 +45,14 @@
                       <a href="{{route('loginfor','Client')}}" class="btn btn-lg btn-secondary">Client</a>
                       <a href="{{route('loginfor','Comptable')}}" class="btn btn-lg btn-secondary">Comptable</a>
                   </div>
+                  
                 </div>
               </div>
+              
             </p>
           </main>
 
+          <a href=/laravelApp/public/   title="Retour">Retour</a>
 
           <footer class="mastfoot mt-auto">
             <div class="inner">

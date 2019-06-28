@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Log in</title>
+  <title>Senforage</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -29,11 +29,13 @@
 </head>
 <body class="hold-transition login-page">
 
-    @extends ("layout.default")
+   
 
     <div class="login-box">
   <div class="login-logo">
     <a href="../../index2.html"><b>SEN FORAGE</b></a>
+    <a href=/laravelApp/public/  class=" btn btn-primary " title="Retour">Retour</i></a>
+
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -52,8 +54,8 @@
         <div class="col-xs-8">
           <div class="checkbox icheck">
             <label>
-              <input type="checkbox"> Se souvenir de moi
-            </label>
+{{--               <input type="checkbox"> Se souvenir de moi
+ --}}            </label>
           </div>
         </div>
         <!-- /.col -->
@@ -65,10 +67,9 @@
     </form>
 
     <div class="social-auth-links text-center">
-      <p>- OU -</p>
-      <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Se connecter avec
-        Facebook</a>
-      <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Se connecter avec
+     <h4> <p> OU </p> </h4>
+{{--       <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Se connecter avec Facebook</a>
+ --}}      <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Se connecter avec
         Google+</a>
     </div>
     <!-- /.social-auth-links -->

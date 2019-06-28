@@ -15,9 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
-    return view('layout.default');
-});
+ Route::get('/', function () {
+    return view('accueils.index');
+}); 
 
 Route::get('/login', function () {
     return view('layout.login');
@@ -25,6 +25,24 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('layout.register');
 });
+
+Route::get('/', function () {
+    return view('layout.default');
+});
+ Route::get('/', function () {
+    return view('accueils.index');
+});
+Route::get('/test', function () {
+    return view('layout.default');
+});
+Route::get('/loginfor/Client', function () {
+    return view('clients.index');
+});
+Route::get('/loginfor/Administrateur', function () {
+    return view('administrateurs.index');
+});
+
+
 Route::get('/clients/selectvillage', function () {
     return view('clients.selectvillage');})->name('clients.selectvillage');
  

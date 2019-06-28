@@ -37,6 +37,9 @@
                             fin_consommation
                         </th>
                         <th>
+                          reglement_type
+                      </th>
+                        <th>
                           action
                         </th>
                         
@@ -73,6 +76,8 @@
                     { data: 'montant', name: ' montant' },
                     { data: 'debut_consommation', name: 'debut_consommation' },
                     { data: 'fin_consommation', name: 'fin_consommation' },
+                    { data: 'reglement.type.name', name: 'reglement.type.name' },
+
                    // { data: 'user.email', name: 'user.email' },
                     { data: null ,orderable: false, searchable: false}
 
@@ -86,7 +91,7 @@
                         return '<a href='+url_e+'  class=" btn btn-primary " title="Modifier"><i class="fa fa-pencil" aria-hidden="true">&nbsp;Edit</i></a>'+
                         '&nbsp;<a class="btn btn-danger" href='+url_d+'" title="Supprimer"><i class="fa fa-trash-o" aria-hidden="true">&nbsp;Delete</i></a>';
                         },
-                        "targets": 5  //definir le nombre de champ a recuperer dans la base 
+                        "targets": 6  //definir le nombre de champ a recuperer dans la base 
                         },
                     // {
                     //     "data": null,

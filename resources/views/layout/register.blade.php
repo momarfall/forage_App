@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Registration Page</title>
+  <title>Senforage</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -29,10 +29,14 @@
 </head>
 <body class="hold-transition register-page">
 
+    
 <div class="register-box">
   <div class="register-logo">
-    <a href="../../index2.html"><b>SEN FORAGE</b></a>
+    <a   href="../../index2.html"><b>SEN FORAGE</b></a>    
+    <a href=/laravelApp/public/  class=" btn btn-primary " title="Retour">Retour</i></a>
   </div>
+  
+  
 
   <div class="register-box-body">
     <p class="login-box-msg"><b>Nouvelle inscription<b></p>
@@ -42,6 +46,11 @@
         <input type="text" class="form-control" placeholder="Nom">
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
+      <form action="../../index.html" method="post">
+        <div class="form-group has-feedback">
+          <input type="text" class="form-control" placeholder="Prenom">
+          <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
       <div class="form-group has-feedback">
         <input type="email" class="form-control" placeholder="Email">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -57,9 +66,9 @@
       <div class="row">
         <div class="col-xs-8">
           <div class="checkbox icheck">
-            <label>
-              <input type="checkbox"> Je suis <a href="#">d'accord</a>
-            </label>
+            {{-- <label>
+              <input type="checkbox">Je suis d'accord<a href="#"></a>
+            </label> --}}
           </div>
         </div>
         <!-- /.col -->
@@ -70,16 +79,17 @@
       </div>
     </form>
 
-    <div class="social-auth-links text-center">
+   {{--  <div class="social-auth-links text-center">
       <p>- OU -</p>
       <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Se connecter avec
         Facebook</a>
       <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Se connecter avec
         Google+</a>
-    </div>
+    </div> --}}
 
     <a href="login.html" class="text-center">Je suis déjà membre</a>
   </div>
+
   <!-- /.form-box -->
 </div>
 <!-- /.register-box -->
@@ -98,6 +108,7 @@
       increaseArea: '20%' /* optional */
     });
   });
+  
 </script>
 </body>
 </html>

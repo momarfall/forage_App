@@ -10,7 +10,8 @@ class FactureController extends Controller
 {
     public function list(Request $request)
     {
-        $facture=Facture::get(); //pour la recuperation
+        $facture=Facture::with('reglement.type')->get();
+         //pour la recuperation
         return Datatables::of($facture)->make(true);
     }
     /**
@@ -22,7 +23,9 @@ class FactureController extends Controller
     {
         //
         return view('factures.index');
+
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -108,4 +111,7 @@ class FactureController extends Controller
     {
         //
     }
+
+   
+
 }

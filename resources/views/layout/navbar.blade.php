@@ -5,7 +5,7 @@
 
   
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="/laravelApp/public/" class="logo">
 
 
       

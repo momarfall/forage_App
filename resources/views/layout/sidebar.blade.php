@@ -49,7 +49,11 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header"></li>
-        <li><a href="/laravelApp/public"><i class="fa fa-home" aria-hidden="true"></i></i> <span>ACCEUIL</span></a></li>
+      
+        <li> <a href="/laravelApp/public/"><i class="fa fa-home" aria-hidden="true"></i></i> <span>ACCEUIL</span></a></li>
+
+
+
         <li><a href="./clients"><i class="fa fa-user" aria-hidden="true"></i></i> <span>Clients</span></a></li>
         <li><a href="./villages"><i class="fa fa-circle-o text-red"></i> <span>Villages</span></a></li>
         <li><a href="./abonnements"><i class="fa fa-circle-o text-red"></i> <span>Abonnements</span></a></li>
