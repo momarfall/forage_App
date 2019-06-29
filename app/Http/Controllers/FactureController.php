@@ -32,16 +32,17 @@ class FactureController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Request $request)
+    public function create(Facture $facture)
     {
         //
         // $this->validate(
         //     $request, [
         //         'village' => 'required|exists:villages,id',
         //     ]);
-        $village_id=$request->input('village');
-        $village=\App\Village::find($village_id);
-        return view('factures.create',compact('village'));
+
+       /*  $village_id=$request->input('village');
+        $village=\App\Village::find($village_id); */
+        return $factures;
     }
 
     /**
@@ -75,7 +76,7 @@ class FactureController extends Controller
      */
     public function show(Facture $facture)
     {
-        //
+        return view ('factures.show');
     }
 
     /**

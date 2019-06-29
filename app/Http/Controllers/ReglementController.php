@@ -36,9 +36,9 @@ class ReglementController extends Controller
         //     $request, [
         //         'village' => 'required|exists:villages,id',
         //     ]);
-        $village_id=$request->input('village');
-        $village=\App\Village::find($village_id);
-        return view('reglements.create',compact('village'));
+        // $village_id=$request->input('village');
+        // $village=\App\Village::find($village_id);
+        return view('reglements.create');
     }
 
     /**

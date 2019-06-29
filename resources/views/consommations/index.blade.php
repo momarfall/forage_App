@@ -24,6 +24,12 @@
                           Date
                         </th>
                         <th>
+                          Valeur
+                        </th>
+                        <th>
+                          Compteurs_id
+                        </th>
+                        <th>
                           Prenom Client
                         </th>
                         <th>
@@ -32,9 +38,9 @@
                         <th>
                             Compteur
                           </th>
-                          <th>
+                         {{--  <th>
                              Valeur Consommation
-                            </th>
+                            </th> --}}
                         <th>
                           Action
                           </th>
@@ -101,11 +107,14 @@
             "ajax": "{{route('consommations.list')}}",
             columns: [
                     { data: 'id', name: 'id' },
-                    { data: 'created_at', name: 'created_at' },
-                    { data: 'compteur.abonnement.client.user.firstname.name', name: 'compteur.abonnement.client.user.firstname' },
-                    { data: 'compteur_clients.abonnement.client.user.name', name: 'compteur.abonnement.client.user.name' },
-                    { data: 'compteur.numero_serie', name: 'compteur.numero_serie' },
+                    { data: 'date', name: 'date' },
                     { data: 'valeur', name: 'valeur' },
+                    { data: 'compteurs_id', name: 'compteurs_id' },
+                    { data: 'compteur.abonnement.client.user.firstname', name: 'compteur.abonnement.client.user.firstname' },
+                    { data: 'compteur.abonnement.client.user.name', name: 'compteur.abonnement.client.user.name' },
+                    { data: 'compteur.numero_serie', name: 'compteur.numero_serie' },
+
+                    
                     { data: null ,orderable: false, searchable: false}
 
                 ],
@@ -116,7 +125,7 @@
                         url_e =  "{!! route('consommations.show',':id')!!}".replace(':id', data.id);
                         return '<a href='+url_e+'  class=" btn btn-primary " ><i class="material-icons">edit</i></a>';
                         },
-                        "targets": 6
+                        "targets": 7
                         },
                     // {
                     //     "data": null,

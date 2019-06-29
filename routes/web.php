@@ -76,9 +76,9 @@ Route::get('/administrateurs/list', 'AdministrateurController@list')->name('admi
 Route::resource('administrateurs', 'AdministrateurController');
 
 
+Route::resource('reglements', 'ReglementController')->except('create');
+Route::get('/reglements/create/{facture}', 'ReglementController@create')->name('reglements.create');
 
-Route::get('/reglements/list', 'ReglementController@list')->name('reglements.list');
-Route::resource('reglements', 'ReglementController');
 
 
 

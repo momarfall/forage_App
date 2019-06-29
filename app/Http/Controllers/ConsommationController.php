@@ -32,8 +32,8 @@ class ConsommationController extends Controller
      */
     public function index()
     {
-        //
-        return view('consommations.index');
+        $consommations=Consommation::get()->paginate(10);
+        return view('consommations.index', compact('consommations'));
     }
    /*  public function list()
     {
