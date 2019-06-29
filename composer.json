@@ -16,7 +16,8 @@
         "nesbot/carbon": "^2.19",
         "reliese/laravel": "^0.0.13",
         "spatie/laravel-collection-macros": "^5.0",
-        "yajra/laravel-datatables-oracle": "~9.0"
+        "yajra/laravel-datatables-oracle": "~9.0",
+        "kwn/number-to-words": "^1.5.0"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
