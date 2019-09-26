@@ -9,8 +9,8 @@
               <div class="card">
                 <div class="card-header card-header-primary">
                   <h4 class="card-title ">SENFORAGE</h4>
-                  <p class="card-category"> Compteurs
-                      <a href="{{route('reglements.create')}}"><div class="btn btn-warning">Nouveau Compteur <i class="fa fa-plus-circle" aria-hidden="true"></i></div></a> 
+                  <p class="card-category"> Reglement
+                      <a href="{{route('reglements.create')}}"><div class="btn btn-warning">Nouveau Reglement <i class="fa fa-plus-circle" aria-hidden="true"></i></div></a> 
                   </p>
                 </div>
                 <div class="card-body">
@@ -82,7 +82,7 @@
                         "data": null,
                         "render": function (data, type, row) {
                         url_e =  "{!! route('factures.show',':id')!!}".replace(':id', data.id);
-                        url_d =  "{!! route('reglements.create',':id')!!}".replace(':id', data.id);
+                        url_d =  "{!! route('reglements.list',':id')!!}".replace(':id', data.id);
                         return '<a href='+url_e+'  class=" btn btn-primary " title="Modifier"><i class="fa fa-pencil" aria-hidden="true">&nbsp;Edit</i></a>'+
                         '&nbsp;<a class="btn btn-danger" href='+url_d+'" title="Supprimer"><i class="fa fa-trash-o" aria-hidden="true">&nbsp;Delete</i></a>';
                         },
